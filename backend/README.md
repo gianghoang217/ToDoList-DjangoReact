@@ -1,5 +1,4 @@
 # Backend Setup for ToDo List App
-https://claude.ai/chat/78b255a5-15a0-4a6c-a786-b76f63d55cb8
 This repository contains the backend for the Todo List application. 
 Follow the steps below to set up and run the application.
 
