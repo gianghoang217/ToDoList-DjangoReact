@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/'; //'http://127.0.0.1:8000/api/'
+const API_URL = 'https://to-do-list-django-otg2ui3oj-gianghks-projects.vercel.app/api/'; //'http://127.0.0.1:8000/api/'
 
 // Create axios instance with credentials
 const apiClient = axios.create({
