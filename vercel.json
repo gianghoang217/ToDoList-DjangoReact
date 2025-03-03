@@ -4,7 +4,11 @@
     {
       "src": "backend/todo_project/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize":  "15mb", "runtime":  "python3.9" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    },
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/next"
     }
   ],
   "routes": [
@@ -15,6 +19,10 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, OPTIONS, DELETE, PUT"
       }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/"
     }
   ]
 }
