@@ -59,13 +59,17 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'todo_project.wsgi.application'
+WSGI_APPLICATION = 'todo_project.wsgi.app'
 
 # Database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'neondb',
+        'USER': 'neondb_owner',
+        'PASSWORD': 'npg_Nd0lSeqBM3pI',
+        'HOST': 'ep-empty-rice-a7rq5xy8-pooler.ap-southeast-2.aws.neon.tech',
+        'PORT': '5432',
     }
 }
 
